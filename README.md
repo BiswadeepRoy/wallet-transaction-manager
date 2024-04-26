@@ -8,7 +8,7 @@ To use the project in local you need to run:
 
 ### `npm install`
 
-Will install the given dependencies in the package.json and will make the app ready to launch.\
+Will install the given dependencies in the package.json and will make the app ready to launch.
 
 ### `npm start`
 
