@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Wallet Transaction Manager
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+To use the project in local you can run:
 
 ### `npm start`
 
@@ -13,11 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,42 +24,27 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## About the app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Wallet Transaction Manager is a simple app to fetch some simulated API responses of wallet details and transaction details and display in the UI.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The simulated API requests are made using promises with setTimeout withsome moderate timer
+The store of the application is made with redux using thunk as a middleware
+The folder structure of the app is as follows:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### src - has the react components and stylesheets for the starting point of the project
+##### actions - has the redux actions for fetching wallet and transaction details
+##### components - has the more specific react components for displaying search-box, header, wallet and transaction detail widgets, etc.(Some of these components are generic and modular to support different scenarios)
+##### config - has a config file to store some hardcoded values used in app and also contains two files for the two different responses of wallet and transaction details
+##### reducers - has two different reducers for wallet and transaction respectively and a rootReducer to combine both of them
+##### sdk - has two files to simulate fetch json payloads of wallet and transaction respectively with some timeouts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+And at last some dependency additions in package.json to support redux, material ui, styled components, thunk and other related functionalities.
 
-## Learn More
+![image](https://github.com/BiswadeepRoy/wallet-transaction-manager/assets/22871888/158508e2-7f93-47c7-a2c4-b5a3eed7f302)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A typical view of the web application after entering a search string
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Learn More About React
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can learn more about react in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
