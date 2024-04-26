@@ -45,6 +45,11 @@ And at last some dependency additions in package.json to support redux, material
 
 A typical view of the web application after entering a search string
 
+## Future-Improvements: 
+#### No test cases are written for this application as it was not requested but currently is a future scope
+#### More better styling can be done as a future improvement
+#### More better optimized and modular react code to be written as a future improvement
+
 ## Learn More About React
 
 You can learn more about react in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
