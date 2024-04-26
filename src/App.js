@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderBar from "./components/HeaderBar";
+import SearchBox from "./components/SearchBox";
+import config from "./config/config";
+import WalletTransactionDetails from "./components/WalletTransactionDetailsList";
 
 function App() {
+  const { headerText } = config;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderBar headerText={headerText} />
+      <SearchBox />
+      <WalletTransactionDetails />
     </div>
   );
 }

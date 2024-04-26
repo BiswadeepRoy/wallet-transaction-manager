@@ -1,13 +1,124 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #3a4e70;
+  color: antiquewhite;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wallet-details-list h3 {
+  margin-left: 10px;
+}
+
+.wallet-details-paper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+}
+
+.txn-details-accordion {
+  width: 95%;
+  display: relative;
+  left: 10px;
+}
+
+.txn-detail-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100px;
+}
+
+.txn-detail-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 2px;
+  height: 100%;
+}
+
+.data-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 60%;
+}
+
+.data-field div:nth-child(1) {
+  color: blueviolet;
+}
+
+.data-field div:nth-child(2) {
+  font-size: smaller;
+}
+
+.green-data {
+  color: #acff78;
+}
+
+.green-data:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.search-input {
+  background-color: white;
+  width: 50%;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 450px) {
+  .data-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    font-size: xx-small;
+  }
+
+  .wallet-details-paper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .txn-detail-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 350px;
+  }
+
+  .txn-detail-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 2px 0;
+    height: 48%;
+    font-size: xx-small;
+  }
 }
